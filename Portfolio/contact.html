@@ -7,38 +7,46 @@
 <html lang="en">
     <head>
         <title>Contact Me</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
         <header>
             <h1>Contact</h1> </header>
-            <hr />
-            <h4><a href="index.html">Home</a></h4>
-            <hr />
+        <nav>
+            <p><a href="index.html">Home</a> <a href="projects.html">Projects</a>  <a href="testimonials.html">Testimonials</a></p>
+        </nav>
             <h1>Information Request</h1>
             <form action="fakepg.html" method="POST">
-              First Name: <br /><input type="text" name="firstname" /> <br /> <br />
-              Last Name: <br /><input type="text" name="lastname" /> <br /> <br />
-              Phone Number: <br /><input type="text" name="phone" /> <br /> <br />
+              First Name: <br /><input type="text" name="firstname" /> <br />
+              Last Name: <br /><input type="text" name="lastname" /> <br />
+              Phone Number: <br /><input type="text" name="phone" /> <br />
               Best Time to Call: <br /><select name="Time">
                 <option value="SelectOne">Select One</option>
                 <option value="Morning">Morning (8AM to 12PM CST)</option>
                 <option value="Afternoon">Afternoon (12PM to 5PM CST)</option>
                 <option value="Evening">Evening (5PM to 8PM CST)</option>
-              </select> <br / > <br />
-              I am interested in (check all that apply): <br />
+              </select> <br / >
+              <fieldset>
+                <legend>I am interested in (check all that apply): </legend>
               <input type="checkbox" name="choices" value="Front-End Web Development"/>Front-End Web Development<br />
               <input type="checkbox" name="choices" value="Back-End Web Development"/>Back-End Web Development<br />
-              <input type="checkbox" name="choices" value="Database Design"/>Database Design<br /> <br /> <br />
-              I have filled in the client questionnaire form: <br />
+              <input type="checkbox" name="choices" value="Database Design"/>Database Design<br />
+            </fieldset>
+            <fieldset>
+              <legend>I have filled in the client questionnaire form: </legend>
               <input type="radio" name="answer" value="Yes" />Yes <br />
-              <input type="radio" name="answer" value="No" checked/>No <br /> <br />
-              Additional information: <br />
+              <input type="radio" name="answer" value="No" checked/>No <br />
+            </fieldset>
+            Additional information: <br />
               <textarea name="AdditionalInfo"></textarea><br /> <br />
               <input type="submit"/>
+              <br /> <br />
             </form>
-
-
+          <footer>
+              <p>&copy; 2019 Miriam Miest-Moore. All rights reserved. </p>
+          </footer>
+        </body>
 
 
 </html>

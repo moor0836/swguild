@@ -1,0 +1,43 @@
+/*
+    Name: Miriam Miest-Moore
+    Date Created: 01/07/2020
+    Most recent revision: 01/07/2020
+*/
+body {
+  background-color: #eee2dc;
+  font-family: 'Caveat Brush', cursive;
+  color: #ac3b61;
+}
+header, footer {
+  background-color: #eee2dc;
+  color:#123C69;
+  text-align: center;
+  padding: 15px;
+}
+header {
+  font-family: 'Rock Salt', cursive;
+}
+footer {
+  font-family: 'Rock Salt', cursive;
+  font-size:.8em;
+}
+br {
+  color:#AC3B61;
+}
+nav {
+  font-family: 'Rock Salt', cursive;
+}
+nav a {
+  text-decoration: underline;
+  color: #ac3b61;
+}
+nav a:visited {
+  color: #123c69;
+}
+nav a:hover {
+  font-weight: bolder;
+  text-decoration:underline;
+}
+nav a:active {
+  text-decoration:none;
+}

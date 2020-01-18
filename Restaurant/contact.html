@@ -7,11 +7,15 @@
 <html lang="en">
     <head>
         <title>Contact Us</title>
-    </head>
+        <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Rock+Salt&display=swap" rel="stylesheet">
+        <link href="styles/restaurantstyles.css" rel="stylesheet" type="text/css" />
     <style>
-    h1 {text-align: center;}
-    p {text-align: center;}
+      h1 {text-align: center;}
+      p {text-align: center;}
+      table .right {text-align: right; font-weight:bold; font-size:1.3em;}
     </style>
+  </head>
+
     <body>
         <header>
             <h1>Paul's Rest Stop</h1>
@@ -25,20 +29,20 @@
 <body>
 <form action="restaurantcontact.html" method="POST">
   <table>
-  <tr><td style="text-align:right">Name: </td><td><input type="text" name="name" / ></td></tr>
-  <tr><td style="text-align:right">Email: </td><td><input type="text" name="email" / > </td></tr>
-  <tr><td style="text-align:right">Phone: </td><td><input type="text" name="phone" / > </td></tr>
-  <tr><td style="text-align:right">Reason for Inquiry: </td><td><select name="reason">
+  <tr><td class="right">Name: </td><td><input type="text" name="name" / ></td></tr>
+  <tr><td class="right">Email: </td><td><input type="text" name="email" / > </td></tr>
+  <tr><td class="right">Phone: </td><td><input type="text" name="phone" / > </td></tr>
+  <tr><td class="right">Reason for Inquiry: </td><td><select name="reason">
     <option value="Catering">Catering</option>
     <option value="Private Party">Private Party</option>
     <option value="Feedback">Feedback</option>
     <option value="Other">Other</option>
     </select></td></tr>
-  <tr><td style="text-align:right">Additional information:</td><td><textarea name="Additional"></textarea></td></tr>
-  <tr><td style="text-align:right">Have you been to the restaurant?</td><td>
+  <tr><td class="right">Additional information:</td><td><textarea name="Additional"></textarea></td></tr>
+  <tr><td class="right">Have you been to the restaurant?</td><td>
   <input type="radio" name="beenthere" value=NO checked / > No
   <input type="radio" name="beenthere" value=YES /> Yes</td></tr>
-  <tr><td style="text-align:right">Best days to contact you: </td><td><input type="checkbox"  name="choices" value="M"> M <input type="checkbox"  name="choices" value="T"> T <input type="checkbox"  name="choices" value="W"> W <input type="checkbox"  name="choices" value="Th"> Th <input type="checkbox"  name="choices" value="F"> F</td></tr>
+  <tr><td class="right">Best days to contact you: </td><td><input type="checkbox"  name="choices" value="M"> M <input type="checkbox"  name="choices" value="T"> T <input type="checkbox"  name="choices" value="W"> W <input type="checkbox"  name="choices" value="Th"> Th <input type="checkbox"  name="choices" value="F"> F</td></tr>
   <tr><td>     </td><td><input type="submit" value="Send Request"></td></tr>
   </table>
   <br />
@@ -47,7 +51,7 @@
 
         <footer>
           <hr />
-          <p> 407 Emerald Street, Moore, OK 73160 <br /> <br />
+          <p> 407 Emerald Street, Moore, OK 73160 <br />
           (405) 999-0010 </p>
         </footer>
     </body>

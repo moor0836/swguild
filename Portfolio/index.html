@@ -7,32 +7,67 @@ Most recent revision: 01/07/20
 <html lang="en">
 <main>
 <head>
-  <header><tile><h1>Miriam's Portfolio</h1></title></header>
+  <title>Miriam's Portfolio</title>
+  <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  <style>
+  caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  table, th, td {
+    border: solid black;
+    border-collapse:collapse;
+    padding: 5px 10px;
+  }
+  table {
+    width:95%;
+    margin:auto;
+  }
+  tr {
+    height: 30px;
+  }
+  th {
+    background-color:#1da8b5;
+  }
+  tbody tr:nth-child(odd) {
+    background-color:rgba(181, 158, 2, .25);
+    }
+  .clear-float {
+    clear:both
+  }
+  article img {
+      float:left;
+      padding-right: 10px;
+    }
+  .right-content {
+    float:left;
+  }
+  article {
+    margin-bottom: 16px;
+  }
+  </style>
     </head>
+    <header><h1>Miriam's Portfolio</h1></header>
     <nav>
-      <hr />
-
     <p><a href="projects.html">Projects</a>  <a href="testimonials.html">Testimonials</a>  <a href="contact.html">Contact</a></p>
-      <hr />
     </nav>
     <body>
-    <section>
+      <section>
   <article id="about-me">
     <h2><em>About Me</em></h2>
-    <table>
-      <tr><td><img src="images/profile600.jpg"> </td>
-      <td><p>I live in <strong>St. Paul</strong> with my husband (Kyle), my cat (Ryland), my puppy (Athena) and our foster dog (Rex)</p>
-      <p>Originally from California, I have adapted to life in the midwest, even with our crazy winters.</p></td></tr>
-    </table>
+      <img src="images/profile600.jpg" alt="Photo of Miriam and Kyle" />
+      <p>I live in <strong>St. Paul</strong> with my husband (Kyle), my cat (Ryland), my puppy (Athena) and our foster dog (Rex)</p>
+      <p>Originally from California, I have adapted to life in the midwest, even with our crazy winters.</p>
+<div class="clear-float"></div>
   </article>
 
   <article id="past-experience">
     <h2><em>Past Experience</em></h2>
     <img src="images/mathematics600.jpg">
-    <br />
-    <br />
-        <table border="1">
-          <caption><b>Employment History</b></caption>
+    <div class="right-content">
+        <table>
+          <caption>Employment History</caption>
           <tr>
             <th>Employment Period</th> <th>Company</th> <th>Title</th> <th>Duties</th>
           </tr>
@@ -63,12 +98,14 @@ Most recent revision: 01/07/20
               <li>Provide information about different subscription options, solicit sales, and process orders from patrons</li>
             </ul></td></tr>
         </table>
-
+      </div>
+<div class="clear-float"></div>
   </article>
 
   <article id="hobbies">
     <h2><em>Hobbies</em></h2>
     <img src="images/athena600.jpg" alt="Athena, our Australian Shepherd puppy"></td>
+      <div class="right-content">
         <ul>
           <li>Activities:
             <ul><li>Biking</li><li>Camping</li><li>Swimming</li><li>Paddle boarding</li><li>Indoor climbing and bouldering</li>
@@ -82,11 +119,12 @@ Most recent revision: 01/07/20
             <ol type:"i"><li>I enjoy problem-solving</li><li>I have a degree in mathematics which taught me to think logically and systematically</li>
               <li>I want to do work that is generally project-based</li></ol>
           </ul>
+      </div>
+  <div class="clear-float"></div>
   </article>
     </section>
 
   <footer>
-    <hr />
     <p>&copy; 2019 Miriam Miest-Moore. All rights reserved. </p>
 </footer>
 
