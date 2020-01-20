@@ -6,74 +6,126 @@
 -->
 <html lang="en">
     <head>
+
         <title>Menu</title>
-      <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Rock+Salt&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Rock+Salt&display=swap" rel="stylesheet">
         <link href="styles/restaurantstyles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-    <style>
-    h1 {text-align: center;}
-    p {text-align: center;}
-    table { margin-left: auto; margin-right: auto; text-align: center;}
-    th, caption {font-size: 1.3em;}
-    caption {font-weight:bold;}
-    td {padding: 15px;}
-    </style>
-  </head>
+        <style>
+          h1, h2 {text-align: center;}
+          h2 {color:#123C69}
+          p {text-align: center;}
+          body {text-align:center;}
+          .carouselAlerts {
+            background-color:#123C69;
+            color:#eee2dc;
+          }
+        </style>
+
+    </head>
+
     <body>
+      <div class="container">
         <header>
             <h1>Paul's Rest Stop</h1>
         </header>
 
-        <nav>
+        <nav style="text-align:left">
           <hr />
-          <a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a>          <hr />
+          <a class="btn badge-pill" href="index.html"><i class="material-icons md-18">home</i></a> <a class="btn badge-pill" href="menu.html">Menu</a> <a class="btn badge-pill" href="contact.html">Contact Us</a>           <hr />
         </nav>
 
-        <section>
-          <br /><br />
-          <table>
-            <tr>
-              <th>Burger and Fries</th><th>Hot Dog and Chips</th><th>Italian Sausage and Peppers</th>
-            </tr>
-            <tr>
-              <td>An American Classic!<br />Your choice - with or without cheese<br />Pickle, onion, tomato, and lettuce<br />Served with out famous thick cut french fries<br />$7.95</td>
-              <td>A Summer Classic!<br />Your choice - white or wheat bun<br />Relish, mustard, and ketchup<br />Served with our house-made chips<br />$7.95</td>
-              <td>An All-Time Favorite!<br />Your choice - mild or spicy Cole Slaw<br />Served with garlic mashers<br />$10.95<br /><br /></td>
-            </tr>
-            <tr><td>   </td><td> <br /></td></tr>
-            <tr>
-              <th>Tenderloin Sandwhich and Chips</th><th>House Salad</th><th>Brisket Sandwich and Fries</th>
-            </tr>
-            <tr>
-              <td>Really Hits the Spot!<br />Plain or Sesame Seed Bun<br />Pickle, onion, tomato, and lettuce<br />Served with our house-made chips<br />$8.95<br /><br /><br /></td>
-              <td>On the Lighter Side<br />Your choice - with or without cheese<br />Iceberg lettuce, tomatoes, peppers<br />Thousand Island or Ranch<br />Dressing Served with a dinner roll<br />$6.95<br /> <br /></td>
-              <td>A Taste of Texas!<br />Smoked Brisket on thick-cut<br />Texas Toast<br />Cole Slaw<br />Served with our famous thick-cut<br />french fries<br />$7.95</td>
-            </tr>
-          </table>
-            <br /> <br />
-          <table>
-            <caption>Beverages</caption>
-            <tr>
-            <td>Root Beer<br />$3.50</td>
-              <td>Bottled Water<br />$1.25</td>
-              <td>Lemonade<br />$1.00</td>
-              <td>Iced Tea<br />$1.25</td>
-            </tr>
-          </table>
-        
+        <div id="menuAlerts" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h2 class ="carouselAlerts">We are opening a new location in Tulsa in March!</h2>
+            </div>
+            <div class="carousel-item">
+                <h2 class="carouselAlerts">We're rolling out our seasonal menu, with special options for this season!</h2>
+            </div>
+            <div class="carousel-item">
+              <h2 class="carouselAlerts">The Drink of the Month is SG Special Brew!</h2>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12"><h2>Food</h2></div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <b>Burger and Fries</b><br /><i>An American Classic!</i><br />Your choice - with or without cheese<br />Pickle, onion, tomato, and lettuce<br />Served with out famous thick cut french fries<br /><b>$7.95</b><br />
+          </div>
+          <div class="col-sm-4">
+            <b>Hot Dog and Chips</b><br /><i>A Summer Classic!</i><br />Your choice - white or wheat bun<br />Relish, mustard, and ketchup<br />Served with our house-made chips<br /><b>$7.95</b><br />
+          </div>
+          <div class="col-sm-4">
+            <b>Italian Sausage and Peppers</b><br /><i>An All-Time Favorite</i><br />Your choice - mild or spicy Cole Slaw<br />Served with garlic mashers<br /><b>$10.95</b><br />
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div class="col-sm-4">
+            <b>Tenderloin Sandwich and Chips</b><br /><i>Really Hits the Spot!</i><br />Plain or Sesame Seed Bun<br />Pickle, onion, tomato, and lettuce<br />Served with our house-made chips<br /><b>$8.95</b><br />
+          </div>
+          <div class="col-sm-4">
+            <b>House SaladL</b><br /><i>On the Lighter Side</i><br />Your choice - with or without cheese<br />Iceberg lettuce, tomatoes, peppers<br />Thousand Island or Ranch<br />Dressing Served with a dinner roll<br /><b>$6.95</b><br />
+          </div>
+          <div class="col-sm-4">
+            <b>Brisket Sandwich</b><br /><i>A Taste of Texas!</i><br />Smoked Brisket on thick-cut Texas Toast<br />Cole Slaw<br />Served with our famous thick-cut french fries<br /><b>$7.95</b><br />
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-sm-12"><h2>Beverages</h2></div>
+        </div>
+
+        <div class=row>
+          <div class="col-sm-3">
+            <b>Root Beer</b><br />$3.50<br />
+          </div>
+          <div class="col-sm-3">
+            <b>Bottled Water</b><br />$1.25<br />
+          </div>
+          <div class="col-sm-3">
+            <b>Lemonade</b><br />$1.00<br />
+          </div>
+          <div class="col-sm-3">
+            <b>Iced Tea</b><br />$1.25<br />
+          </div>
+        </div>
 
 
 
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        <footer>
-          <hr />
-          <p> 407 Emerald Street, Moore, OK 73160 <br />
-          (405) 999-0010 </p>
-        </footer>
+
+
+            <div class="footer">
+              <footer>
+                <hr />
+                <p> 407 Emerald Street, Moore, OK 73160 <br />
+                (405) 999-0010 </p>
+              </footer>
+            </div>
+          </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <noscript>This site is best viewed with JavaScript enabled!</noscript>
     </body>
 </html>

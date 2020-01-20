@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lucky Sevens</title>
+  <script type="text/javascript" src="luckySevens.js"></script>
+  <style>
+    body {
+      text-align:center;
+    }
+    h1, caption {
+      font-weight:bold;
+      font-size:2.5em;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    table {
+  margin-left:auto;
+  margin-right:auto;
+    }
+    tr:nth-child(even){
+      background-color:#f5f5f5;
+    }
+    tr:nth-child(odd){
+      background-color:#e2e2e2;
+    }
+    td{
+      text-align:left;
+      padding: 5px 10px 0px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lucky Sevens</h1>
+  <form id="enterBet" onsubmit="return luckySevens()">
+    <label>Starting Bet:  </label><input type="number" id="bet" /><br /><br>
+    <input type="submit" value="Play" onclick=" return validate()" />
+  </form>
+
+<div style="display:none" id="hidden">
+  <br><br>
+  <hr />
+
+  <table id="resultsTable">
+    <caption>Results<Caption>
+      <tr>
+        <td>Starting Bet</td>
+        <td id="initialBet"></td>
+      </tr>
+      <tr>
+        <td>Total Rolls Before Going Broke</td>
+        <td id="roll"></td>
+      </tr>
+      <tr>
+        <td>Highest Amount Won</td>
+        <td id=maxMoney></td>
+      </tr>
+      <tr>
+        <td>Roll Count at Highest Amount Won</td>
+        <td id="maxRoll"></td>
+      </tr>
+  </table>
+  <br><br>
+  <input type="button" value="Play Again" onclick= "return reset()" />
+</div>
+</body>
+</html>

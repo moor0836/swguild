@@ -24,7 +24,7 @@ footer {
 br {
   color:#AC3B61;
 }
-nav {
+/*nav {
   font-family: 'Rock Salt', cursive;
 }
 nav a {
@@ -40,4 +40,30 @@ nav a:hover {
 }
 nav a:active {
   text-decoration:none;
+}*/
+nav {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+nav .btn {
+  background-color: #AC3B61;
+  color: #eee2dc;
+}
+nav .btn:hover {
+  font-weight:bold;
+}
+nav .btn:active {
+  color:#123C69;
+}
+.material-icons.md-18 {
+   font-size: 18px;
+}
+.jumbotron {
+  background-color: #123C69;
+  color: #eee2dc;
+  font-weight: 3em;
+  text-align:center;
+}
+noscript {
+  font-size:12em;
 }
