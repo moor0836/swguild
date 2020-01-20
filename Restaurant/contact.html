@@ -18,7 +18,7 @@
     <style>
       h1 {text-align: center;}
       p {text-align: center;}
-      table .right {text-align: right; font-weight:bold; font-size:1.3em;}
+      .right {font-size:1.3em; display:block; text-align:right;}
     </style>
 
   </head>
@@ -40,45 +40,91 @@
 
     <form action ="">
       <div class="form-group">
-        <label for="name">Name: </label>
-        <input type="text" class="form-group" id="name">
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="name" class="right">Name: </label>
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="form-group" id="name">
+          </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="email">Email: </label>
-        <input type="text" class="form-group" id="email">
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="email" class="right">Email: </label>
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="form-group" id="email">
+          </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="phone">Phone: </label>
-        <input type="text" class="form-group" id="phone">
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="phone" class="right">Phone: </label>
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="form-group" id="phone">
+          </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="reason">Reason for Inquiry: </label>
-        <select class="form-group" id="reason">
-          <option> </option>
-          <option>Catering</option>
-          <option>Private Party</option>
-          <option>Feedback</option>
-          <option>Other</option>
-        </select>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="reason" class="right">Reason for Inquiry: </label>
+          </div>
+          <div class="col-sm-6">
+            <select class="form-group" id="reason">
+              <option> </option>
+              <option>Catering</option>
+              <option>Private Party</option>
+              <option>Feedback</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="additional" style:"vertical-align:top">Additional Information: </label>
-        <textarea class="form-group" rows="1" id="additional"></textarea>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="additional" class="right" style:"vertical-align:top">Additional Information: </label>
+          </div>
+          <div class="col-sm-6">
+            <textarea class="form-group" rows="3" id="additional"></textarea>
+          </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="beenThere">Have you been to the restaurant? </label>
-        <label class="radio-inline"><input type="radio" name="yes">Yes</label>
-        <label class="radio-inline"><input type="radio" name="no" checked>No</label>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="beenThere" class="right">Have you been to the restaurant? </label>
+          </div>
+          <div class="col-sm-6">
+            <label class="radio-inline"><input type="radio" name="yes">Yes</label>
+            <label class="radio-inline"><input type="radio" name="no" checked>No</label>
+          </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="bestDay">Best days to contact you: </label>
-        <label class="checkbox-inline"><input type="checkbox" value="mon">M  </label>
-        <label class="checkbox-inline"><input type="checkbox" value="tue">Tu  </label>
-        <label class="checkbox-inline"><input type="checkbox" value="wed">W  </label>
-        <label class="checkbox-inline"><input type="checkbox" value="thu">Th  </label>
-        <label class="checkbox-inline"><input type="checkbox" value="fri">F  </label>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="bestDay" class="right">Best days to contact you: </label>
+          </div>
+          <div class="col-sm-6">
+            <label class="checkbox-inline"><input type="checkbox" value="mon">M  </label>
+            <label class="checkbox-inline"><input type="checkbox" value="tue">Tu  </label>
+            <label class="checkbox-inline"><input type="checkbox" value="wed">W  </label>
+            <label class="checkbox-inline"><input type="checkbox" value="thu">Th  </label>
+            <label class="checkbox-inline"><input type="checkbox" value="fri">F  </label>
+          </div>
+        </div>
       </div>
-      <button type="submit" class="btn btn-default" onclick="return validateForm()">Submit</button>
+      <div class="row">
+        <div class="col-sm-12" style="text-align:center;">
+          <button type="submit" class="btn btn-default" onclick="return validateForm()">Submit</button>
+        </div>
+      </div>
     </form>
 
 
